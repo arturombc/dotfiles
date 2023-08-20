@@ -1,3 +1,14 @@
+" Plugins
+call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
+    Plug 'chrisbra/csv.vim'
+    Plug 'moll/vim-bbye'
+    Plug 'simeji/winresizer'
+    Plug 'junegunn/fzf.vim'
+    Plug 'simnalamburt/vim-mundo'
+    Plug 'christoomey/vim-tmux-navigator'
+    Plug 'github/copilot.vim'
+call plug#end()
+
 set clipboard+=unnamedplus
 
 noremap <Up> <Nop>
@@ -29,3 +40,25 @@ set shiftwidth=4
 
 " show substitution
 set inccommand=nosplit
+
+nnoremap <space> <nop>
+let mapleader = "\<space>"
+
+nnoremap <leader>bn :bn<cr> ;buffer next
+
+" Config for chrisbra/csv.vim
+augroup filetype_csv
+    autocmd!
+
+    autocmd BufRead,BufWritePost *.csv :%ArrangeColumn!
+    autocmd BufWritePre *.csv :%UnArrangeColumn
+augroup END
+
+" Config for simeji/winresizer
+let g:winresizer_start_key = "<leader>w"
+
+" Config for fzf.vim 
+nnoremap <leader>f :Files<cr>
+
+nnoremap <c-w>v <c-w>s
+nnoremap <c-w>h <c-w>v
