@@ -1,8 +1,13 @@
+alias ls='ls --color=auto'
 alias ll='ls -lAh --color=auto'
+alias l='ls -LA --color=auto'
 alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
+alias gsl='git superlog'
+alias gs='git status'
 
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
+alias rstudio='/usr/lib/rstudio/rstudio& disown;exit'
