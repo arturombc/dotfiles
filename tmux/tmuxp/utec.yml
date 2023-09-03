@@ -1,0 +1,13 @@
+session_name: UTEC
+start_directory: $HOME/Documents/UTEC
+
+windows:
+  - window_name: xkalibur
+    layout: tiled
+    panes:
+      - ranger
+  - window_name: terms
+    layout: tiled
+    panes:
+      - ls -lAh
+

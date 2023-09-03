@@ -326,8 +326,6 @@ bindsym $mod+Shift+x exec dunstctl history-pop
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Print exec --no-startup-id flameshot full 
 
-# Abrir ranger asociado a una sesión de tmux
-bindsym $mod+Shift+Return exec --no-startup-id urxvtc -e tmux new-session -A -s main -c ~ -n ranger ranger
 
 # Remap Caps Lock key when external keyboard is plugged
 bindsym $mod+z exec "setxkbmap -option 'caps:ctrl_modifier';xcape -e 'Caps_Lock=Escape' &"
