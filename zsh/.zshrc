@@ -68,3 +68,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# bun completions
+[ -s "/home/xkalibur/.bun/_bun" ] && source "/home/xkalibur/.bun/_bun"

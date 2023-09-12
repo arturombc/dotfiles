@@ -31,3 +31,13 @@ export RANGER_LOAD_DEFAULT_RC=FALSE
 
 # For conda
 export PATH="$PATH:/opt/anaconda/bin"
+
+# For Android Studio
+export ANDROID_HOME="$HOME/Apps/Android/Sdk"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+
+
+# For bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$PATH:$BUN_INSTALL/bin"
