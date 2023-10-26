@@ -41,3 +41,7 @@ export PATH="$PATH:$ANDROID_HOME/platform-tools"
 # For bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$PATH:$BUN_INSTALL/bin"
+
+
+# For Jupiter Lab
+export JUPYTERLAB_DIR="$HOME/.local/share/jupyter/lab"

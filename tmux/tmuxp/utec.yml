@@ -1,5 +1,5 @@
 session_name: UTEC
-start_directory: $HOME/Documents/UTEC
+start_directory: $HOME/Study/UTEC
 
 windows:
   - window_name: xkalibur
@@ -10,4 +10,8 @@ windows:
     layout: tiled
     panes:
       - ls -lAh
+  - window_name: downloads
+    layout: tiled
+    panes:
+      - cd "$HOME/Downloads"
 
